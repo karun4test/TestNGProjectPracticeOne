@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AMT_SmokeTest]">
+  <test thread-count="5" name="SmokeTest_run_1(failed)">
+    <classes>
+      <class name="TestCases.Favorites_Deletion">
+        <methods>
+          <include name="fFBrowserInitiation"/>
+          <include name="FavDel"/>
+          <include name="chromebrowserInitiation"/>
+        </methods>
+      </class> <!-- TestCases.Favorites_Deletion -->
+      <class name="TestCases.GuestCheckout_Navigation">
+        <methods>
+          <include name="guestCheckout"/>
+          <include name="fFBrowserInitiation"/>
+          <include name="chromebrowserInitiation"/>
+        </methods>
+      </class> <!-- TestCases.GuestCheckout_Navigation -->
+    </classes>
+  </test> <!-- SmokeTest_run_1(failed) -->
+</suite> <!-- Failed suite [AMT_SmokeTest] -->

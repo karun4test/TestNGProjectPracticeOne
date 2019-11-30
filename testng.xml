@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AMT_SmokeTest">
+    <test name="SmokeTest_run_1">
+
+        <classes>
+
+            <class name="TestCases.StartPage_Login" > </class>
+            <class name="TestCases.StartPage_Logout"></class>
+            <class name="TestCases.DepartmentPage_Navigation"></class>
+            <class name="TestCases.StartPage_Search"></class>
+            <class name="TestCases.Shoppingbag_Login"></class>
+            <class name="TestCases.StartPage_Logout"></class>
+            <class name="TestCases.Shoppingbag_AddProducts"></class>
+            <class name="TestCases.CustomerService_AndroidApplink"></class>
+            <class name="TestCases.CustomerService_IOSApplink"></class>
+            <class name="TestCases.MyAccount_EditDetails"></class>
+            <class name="TestCases.Favorites_adding"></class>
+            <class name="TestCases.FavoritePage_Navigation"></class>
+            <class name="TestCases.Favorites_Deletion"></class>
+            <class name="TestCases.GuestCheckout_Navigation"></class>
+            <class name="TestCases.MyAccount_Navigation"></class>
+            <class name="TestCases.MyAccount_ClubNavigation"></class>
+            <class name="TestCases.MyAccount_MembershioInfoNavigation"></class>
+
+        </classes>
+
+    </test>
+    
+</suite>

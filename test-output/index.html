@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-AMT_SmokeTest">
+              <span class="suite-name border-failed">AMT_SmokeTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AMT_SmokeTest">
+                    <span>C:\Users\tempbakar\IdeaProjects\TestNGProjectPractice\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-AMT_SmokeTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-AMT_SmokeTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-AMT_SmokeTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-AMT_SmokeTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AMT_SmokeTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-AMT_SmokeTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 2 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AMT_SmokeTest" class="hide-methods failed suite-AMT_SmokeTest"> (hide)</a> <!-- hide-methods failed suite-AMT_SmokeTest -->
+                      <a href="#" panel-name="suite-AMT_SmokeTest" class="show-methods failed suite-AMT_SmokeTest"> (show)</a> <!-- show-methods failed suite-AMT_SmokeTest -->
+                    </span>
+                    <div class="method-list-content failed suite-AMT_SmokeTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.Favorites_Deletion" hash-for-method="FavDel">FavDel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.GuestCheckout_Navigation" hash-for-method="guestCheckout">guestCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AMT_SmokeTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AMT_SmokeTest" class="hide-methods passed suite-AMT_SmokeTest"> (hide)</a> <!-- hide-methods passed suite-AMT_SmokeTest -->
+                      <a href="#" panel-name="suite-AMT_SmokeTest" class="show-methods passed suite-AMT_SmokeTest"> (show)</a> <!-- show-methods passed suite-AMT_SmokeTest -->
+                    </span>
+                    <div class="method-list-content passed suite-AMT_SmokeTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.Favorites_adding" hash-for-method="AddingFav">AddingFav</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.Shoppingbag_AddProducts" hash-for-method="AddingProductsFromSeach">AddingProductsFromSeach</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.CustomerService_AndroidApplink" hash-for-method="ClickappLink">ClickappLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.CustomerService_IOSApplink" hash-for-method="ClickappLink">ClickappLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.Shoppingbag_Login" hash-for-method="EmptySBLogin">EmptySBLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.MyAccount_EditDetails" hash-for-method="NewAccCreation">NewAccCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.StartPage_Search" hash-for-method="Search_add">Search_add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.StartPage_Search" hash-for-method="browserCloser">browserCloser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.MyAccount_EditDetails" hash-for-method="browserCloser">browserCloser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.DepartmentPage_Navigation" hash-for-method="browserCloser">browserCloser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.CustomerService_AndroidApplink" hash-for-method="browserCloser">browserCloser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.CustomerService_IOSApplink" hash-for-method="browserCloser">browserCloser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.Shoppingbag_Login" hash-for-method="browserCloser">browserCloser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.Favorites_Deletion" hash-for-method="browserCloser">browserCloser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.StartPage_Logout" hash-for-method="browserCloser">browserCloser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.DepartmentPage_Navigation" hash-for-method="departmentNavigation">departmentNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.StartPage_Login" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AMT_SmokeTest" title="TestCases.StartPage_Logout" hash-for-method="logoutTest">logoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AMT_SmokeTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AMT_SmokeTest" class="panel AMT_SmokeTest">
+          <div class="suite-AMT_SmokeTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.Favorites_Deletion</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FavDel">
+                  </a> <!-- FavDel -->
+                  <span class="method-name">FavDel</span>
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;WKS35682&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\TEMPBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ecdf0145ccea0bbcc1d7dd2e3d57bdc8
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at sitePages.Favorites.deleteFav(Favorites.java:65)
+	at TestCases.Favorites_Deletion.FavDel(Favorites_Deletion.java:14)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-failed -->
+          <div class="suite-AMT_SmokeTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.GuestCheckout_Navigation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="guestCheckout">
+                  </a> <!-- guestCheckout -->
+                  <span class="method-name">guestCheckout</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;WKS35682&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\TEMPBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59694}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ed49e365ed758ec77633c383da8e3f7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sitePages.GuestCheckout.guestCheckout(GuestCheckout.java:54)
+	at TestCases.GuestCheckout_Navigation.guestCheckout(GuestCheckout_Navigation.java:17)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-failed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Shoppingbag_AddProducts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddingProductsFromSeach">
+                  </a> <!-- AddingProductsFromSeach -->
+                  <span class="method-name">AddingProductsFromSeach</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Favorites_Deletion</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserCloser">
+                  </a> <!-- browserCloser -->
+                  <span class="method-name">browserCloser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.StartPage_Search</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_add">
+                  </a> <!-- Search_add -->
+                  <span class="method-name">Search_add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserCloser">
+                  </a> <!-- browserCloser -->
+                  <span class="method-name">browserCloser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Favorites_adding</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddingFav">
+                  </a> <!-- AddingFav -->
+                  <span class="method-name">AddingFav</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.CustomerService_IOSApplink</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickappLink">
+                  </a> <!-- ClickappLink -->
+                  <span class="method-name">ClickappLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserCloser">
+                  </a> <!-- browserCloser -->
+                  <span class="method-name">browserCloser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.CustomerService_AndroidApplink</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickappLink">
+                  </a> <!-- ClickappLink -->
+                  <span class="method-name">ClickappLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserCloser">
+                  </a> <!-- browserCloser -->
+                  <span class="method-name">browserCloser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Shoppingbag_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EmptySBLogin">
+                  </a> <!-- EmptySBLogin -->
+                  <span class="method-name">EmptySBLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserCloser">
+                  </a> <!-- browserCloser -->
+                  <span class="method-name">browserCloser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.MyAccount_EditDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewAccCreation">
+                  </a> <!-- NewAccCreation -->
+                  <span class="method-name">NewAccCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserCloser">
+                  </a> <!-- browserCloser -->
+                  <span class="method-name">browserCloser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.StartPage_Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserCloser">
+                  </a> <!-- browserCloser -->
+                  <span class="method-name">browserCloser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutTest">
+                  </a> <!-- logoutTest -->
+                  <span class="method-name">logoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.DepartmentPage_Navigation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserCloser">
+                  </a> <!-- browserCloser -->
+                  <span class="method-name">browserCloser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="departmentNavigation">
+                  </a> <!-- departmentNavigation -->
+                  <span class="method-name">departmentNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+          <div class="suite-AMT_SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.StartPage_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMT_SmokeTest-class-passed -->
+        </div> <!-- panel AMT_SmokeTest -->
+        <div panel-name="test-xml-AMT_SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\tempbakar\IdeaProjects\TestNGProjectPractice\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AMT_SmokeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SmokeTest_run_1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.StartPage_Login&quot;/&gt;
+      &lt;class name=&quot;TestCases.StartPage_Logout&quot;/&gt;
+      &lt;class name=&quot;TestCases.DepartmentPage_Navigation&quot;/&gt;
+      &lt;class name=&quot;TestCases.StartPage_Search&quot;/&gt;
+      &lt;class name=&quot;TestCases.Shoppingbag_Login&quot;/&gt;
+      &lt;class name=&quot;TestCases.StartPage_Logout&quot;/&gt;
+      &lt;class name=&quot;TestCases.Shoppingbag_AddProducts&quot;/&gt;
+      &lt;class name=&quot;TestCases.CustomerService_AndroidApplink&quot;/&gt;
+      &lt;class name=&quot;TestCases.CustomerService_IOSApplink&quot;/&gt;
+      &lt;class name=&quot;TestCases.MyAccount_EditDetails&quot;/&gt;
+      &lt;class name=&quot;TestCases.Favorites_adding&quot;/&gt;
+      &lt;class name=&quot;TestCases.Favorites_Deletion&quot;/&gt;
+      &lt;class name=&quot;TestCases.GuestCheckout_Navigation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SmokeTest_run_1 --&gt;
+&lt;/suite&gt; &lt;!-- AMT_SmokeTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AMT_SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AMT_SmokeTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SmokeTest_run_1 (13 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AMT_SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AMT_SmokeTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AMT_SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AMT_SmokeTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AMT_SmokeTest');
+function tableData_AMT_SmokeTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'guestCheckout')
+data.setCell(0, 2, 'TestCases.GuestCheckout_Navigation')
+data.setCell(0, 3, 47694);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddingFav')
+data.setCell(1, 2, 'TestCases.Favorites_adding')
+data.setCell(1, 3, 33301);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'NewAccCreation')
+data.setCell(2, 2, 'TestCases.MyAccount_EditDetails')
+data.setCell(2, 3, 31231);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'EmptySBLogin')
+data.setCell(3, 2, 'TestCases.Shoppingbag_Login')
+data.setCell(3, 3, 31199);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTest')
+data.setCell(4, 2, 'TestCases.StartPage_Login')
+data.setCell(4, 3, 26128);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ClickappLink')
+data.setCell(5, 2, 'TestCases.CustomerService_AndroidApplink')
+data.setCell(5, 3, 22716);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'AddingProductsFromSeach')
+data.setCell(6, 2, 'TestCases.Shoppingbag_AddProducts')
+data.setCell(6, 3, 22685);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ClickappLink')
+data.setCell(7, 2, 'TestCases.CustomerService_IOSApplink')
+data.setCell(7, 3, 22366);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Search_add')
+data.setCell(8, 2, 'TestCases.StartPage_Search')
+data.setCell(8, 3, 22227);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'departmentNavigation')
+data.setCell(9, 2, 'TestCases.DepartmentPage_Navigation')
+data.setCell(9, 3, 19559);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'FavDel')
+data.setCell(10, 2, 'TestCases.Favorites_Deletion')
+data.setCell(10, 3, 16111);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'logoutTest')
+data.setCell(11, 2, 'TestCases.StartPage_Logout')
+data.setCell(11, 3, 15094);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'browserCloser')
+data.setCell(12, 2, 'TestCases.StartPage_Logout')
+data.setCell(12, 3, 730);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'browserCloser')
+data.setCell(13, 2, 'TestCases.StartPage_Search')
+data.setCell(13, 3, 702);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'browserCloser')
+data.setCell(14, 2, 'TestCases.Favorites_Deletion')
+data.setCell(14, 3, 701);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'browserCloser')
+data.setCell(15, 2, 'TestCases.Shoppingbag_Login')
+data.setCell(15, 3, 687);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'browserCloser')
+data.setCell(16, 2, 'TestCases.MyAccount_EditDetails')
+data.setCell(16, 3, 671);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'browserCloser')
+data.setCell(17, 2, 'TestCases.DepartmentPage_Navigation')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'browserCloser')
+data.setCell(18, 2, 'TestCases.CustomerService_AndroidApplink')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'browserCloser')
+data.setCell(19, 2, 'TestCases.CustomerService_IOSApplink')
+data.setCell(19, 3, 0);
+window.suiteTableData['AMT_SmokeTest']= { tableData: data, tableDiv: 'times-div-AMT_SmokeTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-AMT_SmokeTest">
+              </div> <!-- times-div-AMT_SmokeTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AMT_SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AMT_SmokeTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AMT_SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">20 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Shoppingbag_AddProducts</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Favorites_Deletion</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.StartPage_Search</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.CustomerService_IOSApplink</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Favorites_adding</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.CustomerService_AndroidApplink</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Shoppingbag_Login</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.GuestCheckout_Navigation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.StartPage_Logout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.DepartmentPage_Navigation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fFBrowserInitiation</span>
+                <br/>
+                <span class="ignored-method-name">chromebrowserInitiation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AMT_SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.StartPage_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">chromebrowserInitiation</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">fFBrowserInitiation</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.StartPage_Logout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logoutTest</span>
+                <span class="method-start">26155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">browserCloser</span>
+                <span class="method-start">41249 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.DepartmentPage_Navigation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">departmentNavigation</span>
+                <span class="method-start">41980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">browserCloser</span>
+                <span class="method-start">61540 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.StartPage_Search</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Search_add</span>
+                <span class="method-start">61540 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">browserCloser</span>
+                <span class="method-start">83768 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Shoppingbag_Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">EmptySBLogin</span>
+                <span class="method-start">84471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">browserCloser</span>
+                <span class="method-start">115671 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Shoppingbag_AddProducts</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AddingProductsFromSeach</span>
+                <span class="method-start">116359 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.CustomerService_AndroidApplink</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ClickappLink</span>
+                <span class="method-start">139045 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">browserCloser</span>
+                <span class="method-start">161761 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.CustomerService_IOSApplink</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ClickappLink</span>
+                <span class="method-start">161762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">browserCloser</span>
+                <span class="method-start">184128 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.MyAccount_EditDetails</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">NewAccCreation</span>
+                <span class="method-start">184129 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">browserCloser</span>
+                <span class="method-start">215361 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Favorites_adding</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AddingFav</span>
+                <span class="method-start">216032 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Favorites_Deletion</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FavDel</span>
+                <span class="method-start">249333 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">browserCloser</span>
+                <span class="method-start">265448 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.GuestCheckout_Navigation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">guestCheckout</span>
+                <span class="method-start">266149 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

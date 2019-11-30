@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SampleTest]">
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="TestCases.CustomerService_AndroidApplink">
+        <methods>
+          <include name="FFBrowserInitiation"/>
+          <include name="ClickappLink"/>
+          <include name="ChromebrowserInitiation"/>
+        </methods>
+      </class> <!-- TestCases.CustomerService_AndroidApplink -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [SampleTest] -->

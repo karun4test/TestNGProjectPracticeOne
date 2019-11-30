@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="20" total="40" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AMT_SmokeTest" duration-ms="313833" started-at="2019-11-25T16:12:28Z" finished-at="2019-11-25T16:17:42Z">
+    <groups>
+    </groups>
+    <test name="SmokeTest_run_1" duration-ms="313833" started-at="2019-11-25T16:12:28Z" finished-at="2019-11-25T16:17:42Z">
+      <class name="TestCases.CustomerService_IOSApplink">
+        <test-method status="PASS" signature="ClickappLink()[pri:0, instance:TestCases.CustomerService_IOSApplink@445b84c0]" name="ClickappLink" duration-ms="22366" started-at="2019-11-25T16:15:10Z" finished-at="2019-11-25T16:15:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickappLink -->
+        <test-method status="PASS" signature="browserCloser()[pri:0, instance:TestCases.CustomerService_IOSApplink@445b84c0]" name="browserCloser" duration-ms="0" started-at="2019-11-25T16:15:32Z" depends-on-methods="TestCases.CustomerService_IOSApplink.ClickappLink" finished-at="2019-11-25T16:15:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCloser -->
+      </class> <!-- TestCases.CustomerService_IOSApplink -->
+      <class name="TestCases.Favorites_adding">
+        <test-method status="PASS" signature="AddingFav()[pri:0, instance:TestCases.Favorites_adding@233c0b17]" name="AddingFav" duration-ms="33301" started-at="2019-11-25T16:16:04Z" finished-at="2019-11-25T16:16:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingFav -->
+      </class> <!-- TestCases.Favorites_adding -->
+      <class name="TestCases.Shoppingbag_Login">
+        <test-method status="PASS" signature="EmptySBLogin()[pri:0, instance:TestCases.Shoppingbag_Login@591f989e]" name="EmptySBLogin" duration-ms="31199" started-at="2019-11-25T16:13:53Z" finished-at="2019-11-25T16:14:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptySBLogin -->
+        <test-method status="PASS" signature="browserCloser()[pri:0, instance:TestCases.Shoppingbag_Login@591f989e]" name="browserCloser" duration-ms="687" started-at="2019-11-25T16:14:24Z" depends-on-methods="TestCases.Shoppingbag_Login.EmptySBLogin" finished-at="2019-11-25T16:14:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCloser -->
+      </class> <!-- TestCases.Shoppingbag_Login -->
+      <class name="TestCases.MyAccount_EditDetails">
+        <test-method status="PASS" signature="NewAccCreation()[pri:0, instance:TestCases.MyAccount_EditDetails@61a52fbd]" name="NewAccCreation" duration-ms="31231" started-at="2019-11-25T16:15:32Z" finished-at="2019-11-25T16:16:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewAccCreation -->
+        <test-method status="PASS" signature="browserCloser()[pri:0, instance:TestCases.MyAccount_EditDetails@61a52fbd]" name="browserCloser" duration-ms="671" started-at="2019-11-25T16:16:03Z" depends-on-methods="TestCases.MyAccount_EditDetails.NewAccCreation" finished-at="2019-11-25T16:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCloser -->
+      </class> <!-- TestCases.MyAccount_EditDetails -->
+      <class name="TestCases.CustomerService_AndroidApplink">
+        <test-method status="PASS" signature="ClickappLink()[pri:0, instance:TestCases.CustomerService_AndroidApplink@61443d8f]" name="ClickappLink" duration-ms="22716" started-at="2019-11-25T16:14:47Z" finished-at="2019-11-25T16:15:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickappLink -->
+        <test-method status="PASS" signature="browserCloser()[pri:0, instance:TestCases.CustomerService_AndroidApplink@61443d8f]" name="browserCloser" duration-ms="0" started-at="2019-11-25T16:15:10Z" depends-on-methods="TestCases.CustomerService_AndroidApplink.ClickappLink" finished-at="2019-11-25T16:15:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCloser -->
+      </class> <!-- TestCases.CustomerService_AndroidApplink -->
+      <class name="TestCases.Favorites_Deletion">
+        <test-method status="FAIL" signature="FavDel()[pri:0, instance:TestCases.Favorites_Deletion@63d4e2ba]" name="FavDel" duration-ms="16111" started-at="2019-11-25T16:16:37Z" finished-at="2019-11-25T16:16:54Z">
+          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
+            <message>
+              <![CDATA[move target out of bounds
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'WKS35682', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\TEMPBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ecdf0145ccea0bbcc1d7dd2e3d57bdc8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'WKS35682', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\TEMPBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ecdf0145ccea0bbcc1d7dd2e3d57bdc8
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at sitePages.Favorites.deleteFav(Favorites.java:65)
+at TestCases.Favorites_Deletion.FavDel(Favorites_Deletion.java:14)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FavDel -->
+        <test-method status="PASS" signature="browserCloser()[pri:0, instance:TestCases.Favorites_Deletion@63d4e2ba]" name="browserCloser" duration-ms="701" started-at="2019-11-25T16:16:54Z" depends-on-methods="TestCases.Favorites_Deletion.FavDel" finished-at="2019-11-25T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCloser -->
+      </class> <!-- TestCases.Favorites_Deletion -->
+      <class name="TestCases.StartPage_Logout">
+        <test-method status="PASS" signature="logoutTest()[pri:0, instance:TestCases.StartPage_Logout@5474c6c]" name="logoutTest" duration-ms="15094" started-at="2019-11-25T16:12:54Z" finished-at="2019-11-25T16:13:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method status="PASS" signature="browserCloser()[pri:0, instance:TestCases.StartPage_Logout@5474c6c]" name="browserCloser" duration-ms="730" started-at="2019-11-25T16:13:09Z" depends-on-methods="TestCases.StartPage_Logout.logoutTest" finished-at="2019-11-25T16:13:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCloser -->
+      </class> <!-- TestCases.StartPage_Logout -->
+      <class name="TestCases.StartPage_Login">
+        <test-method status="PASS" signature="chromebrowserInitiation()[pri:0, instance:TestCases.StartPage_Login@2cfb4a64]" name="chromebrowserInitiation" is-config="true" duration-ms="10" started-at="2019-11-25T16:12:28Z" finished-at="2019-11-25T16:12:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromebrowserInitiation -->
+        <test-method status="PASS" signature="fFBrowserInitiation()[pri:0, instance:TestCases.StartPage_Login@2cfb4a64]" name="fFBrowserInitiation" is-config="true" duration-ms="0" started-at="2019-11-25T16:12:28Z" finished-at="2019-11-25T16:12:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fFBrowserInitiation -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:TestCases.StartPage_Login@2cfb4a64]" name="loginTest" duration-ms="26128" started-at="2019-11-25T16:12:28Z" finished-at="2019-11-25T16:12:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- TestCases.StartPage_Login -->
+      <class name="TestCases.GuestCheckout_Navigation">
+        <test-method status="FAIL" signature="guestCheckout()[pri:0, instance:TestCases.GuestCheckout_Navigation@7bb11784]" name="guestCheckout" duration-ms="47694" started-at="2019-11-25T16:16:54Z" finished-at="2019-11-25T16:17:42Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'WKS35682', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\TEMPBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59694}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ed49e365ed758ec77633c383da8e3f7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'WKS35682', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\TEMPBA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59694}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ed49e365ed758ec77633c383da8e3f7
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sitePages.GuestCheckout.guestCheckout(GuestCheckout.java:54)
+at TestCases.GuestCheckout_Navigation.guestCheckout(GuestCheckout_Navigation.java:17)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guestCheckout -->
+      </class> <!-- TestCases.GuestCheckout_Navigation -->
+      <class name="TestCases.Shoppingbag_AddProducts">
+        <test-method status="PASS" signature="AddingProductsFromSeach()[pri:0, instance:TestCases.Shoppingbag_AddProducts@66048bfd]" name="AddingProductsFromSeach" duration-ms="22685" started-at="2019-11-25T16:14:24Z" finished-at="2019-11-25T16:14:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingProductsFromSeach -->
+      </class> <!-- TestCases.Shoppingbag_AddProducts -->
+      <class name="TestCases.DepartmentPage_Navigation">
+        <test-method status="PASS" signature="departmentNavigation()[pri:0, instance:TestCases.DepartmentPage_Navigation@4b6995df]" name="departmentNavigation" duration-ms="19559" started-at="2019-11-25T16:13:10Z" finished-at="2019-11-25T16:13:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- departmentNavigation -->
+        <test-method status="PASS" signature="browserCloser()[pri:0, instance:TestCases.DepartmentPage_Navigation@4b6995df]" name="browserCloser" duration-ms="0" started-at="2019-11-25T16:13:30Z" depends-on-methods="TestCases.DepartmentPage_Navigation.departmentNavigation" finished-at="2019-11-25T16:13:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCloser -->
+      </class> <!-- TestCases.DepartmentPage_Navigation -->
+      <class name="TestCases.StartPage_Search">
+        <test-method status="PASS" signature="Search_add()[pri:0, instance:TestCases.StartPage_Search@2fc14f68]" name="Search_add" duration-ms="22227" started-at="2019-11-25T16:13:30Z" finished-at="2019-11-25T16:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_add -->
+        <test-method status="PASS" signature="browserCloser()[pri:0, instance:TestCases.StartPage_Search@2fc14f68]" name="browserCloser" duration-ms="702" started-at="2019-11-25T16:13:52Z" depends-on-methods="TestCases.StartPage_Search.Search_add" finished-at="2019-11-25T16:13:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCloser -->
+      </class> <!-- TestCases.StartPage_Search -->
+    </test> <!-- SmokeTest_run_1 -->
+  </suite> <!-- AMT_SmokeTest -->
+</testng-results>
